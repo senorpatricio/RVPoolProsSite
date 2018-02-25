@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderNavComponent } from './header-nav/header-nav.component';
+import { MainImageComponent } from './main-image/main-image.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderNavComponent
+    HeaderNavComponent,
+    MainImageComponent
   ],
   imports: [
     BrowserModule

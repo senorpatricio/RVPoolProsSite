@@ -1,13 +1,51 @@
-nav {
-	height: 50px;
-	width: 100%;
-	box-shadow: 0 3px 3px #ccc;
-	display: flex;
-    justify-content: space-evenly;
-	align-items: center;
+@import "../../css/main.scss";
 
-	.pool-pros-mobile-logo {
-		width: 130px;
-		padding: 5px 5px 5px 10px;
+nav {
+	background: white;
+	height: 40px;
+	width: 100%;
+	box-shadow: 0 3px 3px $shadow-grey;
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid $shadow-grey;
+	position: relative;
+
+	.left-nav {
+		width: 50%;
+		
+		.pool-pros-mobile-logo {
+			width: 80%;
+			padding: 5px 5px 0 10px;
+		}
+	}
+	.right-nav {
+		width: 50%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		.find-pro-button {
+			align-items: center;
+    		display: flex;
+    		justify-content: space-around;
+			width: 70px;
+			border: 2px solid $pool-blue;
+			border-radius: 2px;
+			color: $pool-blue;
+			font-size: x-small;
+			text-decoration: none;
+			text-transform: uppercase;
+			padding: 3px;
+			margin-right: 10px;
+			&>img {
+				width: 10px;
+			}
+		}
+		.menu-button {
+			&>img {
+				width: 50px;
+				margin-top: 10px;
+			}
+		}
 	}
 }

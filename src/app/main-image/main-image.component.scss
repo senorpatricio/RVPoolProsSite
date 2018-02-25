@@ -1,0 +1,12 @@
+@import "../../css/main.scss";
+
+.main-image {
+	width: 100%;
+	height: 100px;
+	background-image: url('../../assets/water-image.png');
+	background-size: cover; 
+	background-position: center;
+	@mixin md {
+
+	}
+}
